@@ -4,6 +4,22 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "raaGL4Test", "raaGL4Test\raaGL4Test.vcxproj", "{A6219756-F057-4838-A42D-5C5B23BCA660}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2926606-D63F-4D87-BED6-06A12C48D4D7} = {F2926606-D63F-4D87-BED6-06A12C48D4D7}
+		{9967D699-826F-40CA-84CF-9EF485A269F8} = {9967D699-826F-40CA-84CF-9EF485A269F8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "raaUtilities", "..\raaCommonTools\raaUtilities\raaUtilities.vcxproj", "{9967D699-826F-40CA-84CF-9EF485A269F8}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "raaGL4RenderTools", "raaGL4RenderTools\raaGL4RenderTools.vcxproj", "{F2926606-D63F-4D87-BED6-06A12C48D4D7}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9967D699-826F-40CA-84CF-9EF485A269F8} = {9967D699-826F-40CA-84CF-9EF485A269F8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "raaGL4Testing", "raaGL4Testing\raaGL4Testing.vcxproj", "{EA7F8123-412F-44CE-A12B-6B7F63742644}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F2926606-D63F-4D87-BED6-06A12C48D4D7} = {F2926606-D63F-4D87-BED6-06A12C48D4D7}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +37,30 @@ Global
 		{A6219756-F057-4838-A42D-5C5B23BCA660}.Release|x64.Build.0 = Release|x64
 		{A6219756-F057-4838-A42D-5C5B23BCA660}.Release|x86.ActiveCfg = Release|Win32
 		{A6219756-F057-4838-A42D-5C5B23BCA660}.Release|x86.Build.0 = Release|Win32
+		{9967D699-826F-40CA-84CF-9EF485A269F8}.Debug|x64.ActiveCfg = Debug|x64
+		{9967D699-826F-40CA-84CF-9EF485A269F8}.Debug|x64.Build.0 = Debug|x64
+		{9967D699-826F-40CA-84CF-9EF485A269F8}.Debug|x86.ActiveCfg = Debug|Win32
+		{9967D699-826F-40CA-84CF-9EF485A269F8}.Debug|x86.Build.0 = Debug|Win32
+		{9967D699-826F-40CA-84CF-9EF485A269F8}.Release|x64.ActiveCfg = Release|x64
+		{9967D699-826F-40CA-84CF-9EF485A269F8}.Release|x64.Build.0 = Release|x64
+		{9967D699-826F-40CA-84CF-9EF485A269F8}.Release|x86.ActiveCfg = Release|Win32
+		{9967D699-826F-40CA-84CF-9EF485A269F8}.Release|x86.Build.0 = Release|Win32
+		{F2926606-D63F-4D87-BED6-06A12C48D4D7}.Debug|x64.ActiveCfg = Debug|x64
+		{F2926606-D63F-4D87-BED6-06A12C48D4D7}.Debug|x64.Build.0 = Debug|x64
+		{F2926606-D63F-4D87-BED6-06A12C48D4D7}.Debug|x86.ActiveCfg = Debug|Win32
+		{F2926606-D63F-4D87-BED6-06A12C48D4D7}.Debug|x86.Build.0 = Debug|Win32
+		{F2926606-D63F-4D87-BED6-06A12C48D4D7}.Release|x64.ActiveCfg = Release|x64
+		{F2926606-D63F-4D87-BED6-06A12C48D4D7}.Release|x64.Build.0 = Release|x64
+		{F2926606-D63F-4D87-BED6-06A12C48D4D7}.Release|x86.ActiveCfg = Release|Win32
+		{F2926606-D63F-4D87-BED6-06A12C48D4D7}.Release|x86.Build.0 = Release|Win32
+		{EA7F8123-412F-44CE-A12B-6B7F63742644}.Debug|x64.ActiveCfg = Debug|x64
+		{EA7F8123-412F-44CE-A12B-6B7F63742644}.Debug|x64.Build.0 = Debug|x64
+		{EA7F8123-412F-44CE-A12B-6B7F63742644}.Debug|x86.ActiveCfg = Debug|Win32
+		{EA7F8123-412F-44CE-A12B-6B7F63742644}.Debug|x86.Build.0 = Debug|Win32
+		{EA7F8123-412F-44CE-A12B-6B7F63742644}.Release|x64.ActiveCfg = Release|x64
+		{EA7F8123-412F-44CE-A12B-6B7F63742644}.Release|x64.Build.0 = Release|x64
+		{EA7F8123-412F-44CE-A12B-6B7F63742644}.Release|x86.ActiveCfg = Release|Win32
+		{EA7F8123-412F-44CE-A12B-6B7F63742644}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
